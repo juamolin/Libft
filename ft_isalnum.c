@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 18:30:02 by juamolin          #+#    #+#             */
-/*   Updated: 2024/09/19 20:02:09 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 14:12:14 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	int	c;
 	int	a;
@@ -31,3 +31,4 @@ int	main(void)
 	write(1, &a, 1);
 	return (0);
 }
+ */
