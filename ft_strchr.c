@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:09:03 by juamolin          #+#    #+#             */
-/*   Updated: 2024/09/28 11:45:45 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strchr(const char *s, int c)
 	return(0);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	const char	str[] = "Hola, que tal?";
 	char		*result;
@@ -44,3 +44,4 @@ int	main(void)
 		write(1, "No encontrado\n", 14);
 	return (0);
 }
+ */

@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 09:52:13 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 11:56:07 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	int	number = -12345;
 	char	*str = ft_itoa(number);
@@ -62,3 +62,4 @@ int	main(void)
 	free (str);
 	return (0);
 }
+ */

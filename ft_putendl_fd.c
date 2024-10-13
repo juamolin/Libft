@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 20:54:16 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/07 21:26:55 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,11 @@ void	ft_putendl_fd(char *s, int fd)
 	write (fd, "\n", 1);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	str [] = "Viva la vida";
 
 	ft_putendl_fd(str, 1);
 	return (0);
 }
+ */

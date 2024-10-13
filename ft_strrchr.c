@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 20:20:12 by juamolin          #+#    #+#             */
-/*   Updated: 2024/09/28 12:30:38 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strrchr(const char *s, int c)
 	return (0);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	const  char	cadena[] = "la vida es maravillosa";
 	char		*resultado;
@@ -47,3 +47,4 @@ int	main(void)
 		write(1, "no encontrado\n", 14); 
 	return (0);
 }
+ */

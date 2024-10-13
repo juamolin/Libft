@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 17:32:19 by juamolin          #+#    #+#             */
-/*   Updated: 2024/09/22 18:31:27 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	src[] = "Hola, que tal?";
 	char	dest[15];
@@ -46,3 +46,4 @@ int	main(void)
 	write(1, dest, 14);
 	return (0);
 }
+ */

@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 17:55:44 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/02 18:42:57 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	const char *s = "viva la vida";
 	int c = 'l';
@@ -39,3 +39,4 @@ int	main(void)
 	printf("%s\n", (char*)ft_memchr(s, c, n));
 	return (0);
 }
+ */

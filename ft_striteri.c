@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 20:11:44 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/09 20:43:12 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,10 @@ void	my_toupper_inplace(unsigned int i, char *c)
 	*c = ft_toupper(*c);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	s[] = "Hola, mundo";
 	ft_striteri(s, &my_toupper_inplace);
 	printf("%s\n", s);
 }
+ */

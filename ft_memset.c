@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 19:15:09 by juamolin          #+#    #+#             */
-/*   Updated: 2024/09/21 21:54:23 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	i[] = "Hola, que tal";
 	size_t	str;
@@ -38,3 +38,4 @@ int	main(void)
 	write(1, i, str);
 	return (0);
 }
+ */

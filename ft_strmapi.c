@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:45:01 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/09 21:20:25 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	my_toupper(unsigned int i, char c)
 	return (ft_toupper(c));
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	*str = "Hola Mundo";
 	char	*new_str = ft_strmapi(str, my_toupper);
@@ -54,3 +54,4 @@ int	main(void)
 	free(new_str);
 	return (0);
 }
+ */

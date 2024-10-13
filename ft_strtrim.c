@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:35:53 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/08 17:07:02 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (result);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	*str = ft_strtrim("aeiua(TuT)uauiou", "aeiou");
 	printf("%s\n", str);
 	return (0);
 }
+ */

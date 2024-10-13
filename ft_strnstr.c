@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 16:42:02 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/01 20:57:23 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	str1[] = "Hola mundo";
 	char	str2[] = "mundo";
@@ -47,3 +47,4 @@ int	main(void)
 	printf("%s\n", ft_strnstr(str1, str2, len));
 	return (0);
 }
+ */

@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 21:27:48 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/08 20:23:03 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,10 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n + 48, fd);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	int	a = 11;
 	ft_putnbr_fd(a, 1);
 	return (0);
 }
+ */

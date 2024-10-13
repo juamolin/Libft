@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:09:04 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/11 19:27:57 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ char	**ft_split(char const *s, char c)
 	return (str);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	*str = " Hola  que tal";
 	char	c = ' ';
@@ -93,3 +93,4 @@ int	main(void)
 	free(result);
 	return (0);
 }
+ */

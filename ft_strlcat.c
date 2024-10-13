@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 18:44:59 by juamolin          #+#    #+#             */
-/*   Updated: 2024/09/24 21:42:44 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (dst_len + src_len);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	dst[30]	= "Hola";
 	const char	src[] = ", que tal?";
@@ -50,3 +50,4 @@ int	main(void)
 	write(1, "\n", 1);
 	return (0);
 } 
+ */

@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 13:03:51 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/06 13:54:52 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (result);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	*str1 = "Hola, ";
 	char	*str2 = "que tal?";
@@ -43,3 +43,4 @@ int	main(void)
 	printf("%s\n", resultado);
 	return (0);
 }
+ */
