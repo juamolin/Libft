@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 19:15:09 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 16:40:37 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*a;
 
 	i = 0;

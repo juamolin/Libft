@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 20:42:12 by juamolin          #+#    #+#             */
-/*   Updated: 2024/09/24 17:29:00 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:41:04 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ size_t	ft_strlen(const char *s)
 	while (s[i] != '\0')
 		i++;
 	return (i);
-}/*
-
+}
+/*
 int	main(void)
 {
 	size_t	i;

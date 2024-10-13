@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 15:30:34 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/07 18:59:42 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:33:50 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strdup(const char *s)
 {
 	char	*dup;
-	
+
 	dup = malloc(ft_strlen(s) + 1);
 	if (!dup)
 		return (0);

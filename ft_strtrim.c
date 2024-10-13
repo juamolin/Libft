@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:35:53 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:48:43 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	search(char c, char const *set)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (set[i])
@@ -28,25 +28,25 @@ static int	search(char c, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int	i;
-	int j;
-	char *result;
-	
+	int		i;
+	int		j;
+	char	*result;
+
 	i = 0;
 	j = ft_strlen(s1) - 1;
 	while (s1[i])
 	{
 		if (search(s1[i], set) == 0)
-			break;
+			break ;
 		i++;
 	}
 	while (s1[j])
 	{
 		if (search(s1[j], set) == 0)
-			break;
+			break ;
 		j--;
 	}
-	result  = ft_substr(s1, i, (j - i) + 1);
+	result = ft_substr(s1, i(j - i) + 1);
 	return (result);
 }
 

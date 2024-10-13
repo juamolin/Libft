@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:09:04 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:14:42 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ static int	ft_count_words(char const *s, char c)
 	j = 0;
 	while (s[i] != '\0')
 	{
-		if ((i == 0 && s[i] != c)
-		|| (i >= 1 && (s[i] != c && s[i - 1] == c)))
+		if ((i == 0 && s[i] != c) || (i >= 1 && (s[i] != c && s[i - 1] == c)))
 			j++;
 		i++;
 	}
@@ -32,9 +31,9 @@ static int	ft_count_words(char const *s, char c)
 static char	*ft_word_dup(const char *s, int start, int finish)
 {
 	char	*word;
-	int	i;
+	int		i;
 
-	word = (char*)malloc((finish - start + 1) * sizeof(char));
+	word = (char *)malloc((finish - start + 1) * sizeof(char));
 	if (!word)
 		return (NULL);
 	i = 0;
@@ -47,14 +46,13 @@ static char	*ft_word_dup(const char *s, int start, int finish)
 char	**ft_split(char const *s, char c)
 {
 	char	**str;
-	int	words;
-	int	i;
-	int	j;
-	int	starts;
+	int		words;
+	int		i;
+	int		j;
+	int		starts;
 
 	if (!s)
 		return (NULL);
-	words = 0;
 	words = ft_count_words(s, c);
 	str = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!str)
@@ -63,10 +61,10 @@ char	**ft_split(char const *s, char c)
 	j = 0;
 	while (s[i] == c && s[i] != '\0')
 	{
-		while(s[i] == c && s[i] != '\0')
+		while (s[i] == c && s[i] != '\0')
 			i++;
 		starts = i;
-		while(s[i] != c && s[i] != '\0')
+		while (s[i] != c && s[i] != '\0')
 			i++;
 		if (i > starts)
 			str[j++] = ft_word_dup(s, starts, i);
@@ -74,8 +72,8 @@ char	**ft_split(char const *s, char c)
 	str[j] = NULL;
 	return (str);
 }
-
-/* int	main(void)
+/*
+int	main(void)
 {
 	char	*str = " Hola  que tal";
 	char	c = ' ';
