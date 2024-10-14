@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:09:04 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 17:14:42 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/14 21:11:29 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,63 +14,69 @@
 
 static int	ft_count_words(char const *s, char c)
 {
-	int	i;
-	int	j;
+	int	count;
 
-	i = 0;
-	j = 0;
-	while (s[i] != '\0')
+	count = 0;
+	while (*s)
 	{
-		if ((i == 0 && s[i] != c) || (i >= 1 && (s[i] != c && s[i - 1] == c)))
-			j++;
-		i++;
+		while (*s == c)
+			s++;
+		if (*s)
+			count++;
+		while (*s && *s != c)
+			s++;
 	}
-	return (j);
+	return (count);
 }
 
-static char	*ft_word_dup(const char *s, int start, int finish)
+static void	*ft_free(char **ptr)
 {
-	char	*word;
-	int		i;
+	int	i;
 
-	word = (char *)malloc((finish - start + 1) * sizeof(char));
-	if (!word)
-		return (NULL);
 	i = 0;
-	while (start < finish)
-		word[i++] = s[start++];
-	word[i] = '\0';
-	return (word);
+	while (ptr[i])
+	{
+		free (ptr[i]);
+		i++;
+	}
+	free (ptr);
+	return (NULL);
+}
+
+static char	**ft_split_two(char const *s, char c, int n)
+{
+	char			**str;
+	int				i;
+	const char		*starts;
+
+	i = 0;
+	str = (char **)malloc(sizeof(char *) * (n + 1));
+	if (!str)
+		return (NULL);
+	while (i < n)
+	{
+		while (*s == c)
+			s++;
+		starts = s;
+		while (*s && *s != c)
+			s++;
+		str[i] = ft_substr(starts, 0, s - starts);
+		if (!str[i])
+			return (ft_free(str));
+		i++;
+	}
+	str[i] = NULL;
+	return (str);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**str;
-	int		words;
-	int		i;
-	int		j;
-	int		starts;
+	int		n;
 
 	if (!s)
 		return (NULL);
-	words = ft_count_words(s, c);
-	str = (char **)malloc(sizeof(char *) * (words + 1));
-	if (!str)
-		return (NULL);
-	i = 0;
-	j = 0;
-	while (s[i] == c && s[i] != '\0')
-	{
-		while (s[i] == c && s[i] != '\0')
-			i++;
-		starts = i;
-		while (s[i] != c && s[i] != '\0')
-			i++;
-		if (i > starts)
-			str[j++] = ft_word_dup(s, starts, i);
-	}
-	str[j] = NULL;
-	return (str);
+	n = ft_count_words (s, c);
+	return (ft_split_two(s, c, n));
 }
 /*
 int	main(void)
@@ -82,13 +88,11 @@ int	main(void)
 
 	result = ft_split(str, c);
 	i = 0;
-	while (result[i] != NULL)
+	while (result[i])
 	{
 		printf("Word %d: %s\n", i, result[i]);
-		free(result[i]);
 		i++;
 	}
-	free(result);
+	ft_free(result);
 	return (0);
-}
- */
+}*/

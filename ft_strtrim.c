@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:35:53 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 17:48:43 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/14 21:27:10 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 			break ;
 		j--;
 	}
-	result = ft_substr(s1, i(j - i) + 1);
+	result = ft_substr(s1, i, (j - i + 1));
 	return (result);
 }
 

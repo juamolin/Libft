@@ -6,7 +6,7 @@
 /*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 16:20:30 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 19:05:52 by juamolin         ###   ########.fr       */
+/*   Updated: 2024/10/14 21:16:09 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,11 @@ int	ft_atoi(const char *nptr)
 	}
 	return (num * sign);
 }
-
+/*
 int	main(void)
 {
 	char	str[] = "23456";
 
 	printf("%d\n", ft_atoi(str));
 	return (0);
-}
+}*/

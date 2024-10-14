@@ -1,7 +1,9 @@
 NAME = libft.a
 
 CC = cc
+
 CCFLAGS = -Wall -Wextra -Werror
+
 RM = rm
 
 SOURCE = ft_atoi.c ft_isprint.c ft_putchar_fd.c ft_striteri.c \
@@ -12,7 +14,7 @@ SOURCE = ft_atoi.c ft_isprint.c ft_putchar_fd.c ft_striteri.c \
 	ft_tolower.c ft_isascii.c ft_memmove.c ft_strchr.c ft_strmapi.c \
 	ft_toupper.c ft_isdigit.c ft_memset.c ft_strdup.c ft_strncmp.c \
 
-OBJS = $(SOURCE: .c=.o)
+OBJS = $(SOURCE:.c=.o)
 
 INCLUDE = libft.h
 
