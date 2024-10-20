@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: juamolin <juamolin@student.42madrid.com>   #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 18:32:07 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/02 20:13:38 by juamolin         ###   ########.fr       */
+/*   Created: 2024-10-17 18:21:47 by juamolin          #+#    #+#             */
+/*   Updated: 2024-10-17 18:21:47 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,15 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+/*
+int	main(void)
+{
+	int	c;
+	int	a;
 
-//int	main(void)
-//{
-//	int	c;
-//	int	a;
-
-//	c = 'a';
-//	a = ft_isdigit(c);
-//	a += '0';
-//	write(1, &a, 1);
-//	return (0);
-//}
+	c = 'a';
+	a = ft_isdigit(c);
+	a += '0';
+	write(1, &a, 1);
+	return (0);
+}*/

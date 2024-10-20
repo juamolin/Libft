@@ -3,22 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: juamolin <juamolin@student.42madrid.com>   #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 17:02:11 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 10:24:54 by juamolin         ###   ########.fr       */
+/*   Created: 2024-10-17 18:20:25 by juamolin          #+#    #+#             */
+/*   Updated: 2024-10-17 18:20:25 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-	nmemb es el número de elementos.
-	size es el tamaño de cada uno de estos elementos.
-	Por lo tanto, la región de memoria
-	que puede albergar nmemb elemntos, cada uno con un tamaño de size
-	ha de tener (nmemb * size) número de bytes
-*/
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

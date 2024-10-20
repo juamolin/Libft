@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: juamolin <juamolin@student.42madrid.com>   #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/07 17:46:23 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 16:41:17 by juamolin         ###   ########.fr       */
+/*   Created: 2024-10-17 18:23:18 by juamolin          #+#    #+#             */
+/*   Updated: 2024-10-17 18:23:18 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

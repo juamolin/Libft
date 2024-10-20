@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: juamolin <juamolin@student.42madrid.com>   #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 19:09:03 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 17:33:22 by juamolin         ###   ########.fr       */
+/*   Created: 2024-10-17 18:23:56 by juamolin          #+#    #+#             */
+/*   Updated: 2024-10-17 18:23:56 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s);
 		s++;
 	}
+	if ((char)c == '\0')
+		return ((char *)s);
 	return (0);
 }
 /*

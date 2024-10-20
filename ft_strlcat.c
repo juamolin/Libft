@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: juamolin <juamolin@student.42madrid.com>   #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/24 18:44:59 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 17:40:32 by juamolin         ###   ########.fr       */
+/*   Created: 2024-10-17 18:24:41 by juamolin          #+#    #+#             */
+/*   Updated: 2024-10-17 18:24:41 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		return (src_len + size);
 	i = dst_len;
 	j = 0;
-	while (src[j] != '\0' && i < size - i)
+	while (src[j] != '\0' && i < (size - 1))
 	{
 		dst[i] = src[j];
 		i++;
@@ -34,18 +34,17 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (dst_len + src_len);
 }
-
-/* int	main(void)
+/*
+int	main(void)
 {
-	char	dst[30]	= "Hola";
-	const char	src[] = ", que tal?";
-	size_t len;
+	char	dst[200]	= "pqrstuvwxyz";
+	const char	src[] = "abcd";
+ 	size_t len;
 
-	len = ft_strlcat(dst, src, sizeof(dst));
+ 	len = ft_strlcat(dst, src, sizeof(dst));
 
-	printf("%lu,\n", len);
-	write(1, dst, ft_strlen(dst));
-	write(1, "\n", 1);
-	return (0);
-} 
- */
+ 	printf("%lu,\n", len);
+ 	write(1, dst, ft_strlen(dst));
+ 	write(1, "\n", 1);
+ 	return (0);
+}*/

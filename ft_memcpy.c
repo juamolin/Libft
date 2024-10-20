@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: juamolin <juamolin@student.42madrid.com>   #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-10-13 16:11:24 by juamolin          #+#    #+#             */
-/*   Updated: 2024-10-13 16:11:24 by juamolin         ###   ########.fr       */
+/*   Created: 2024-10-17 18:22:42 by juamolin          #+#    #+#             */
+/*   Updated: 2024/10/20 11:20:16 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
+	if (!dest && !src)
+		return (dest);
 	while (i < n)
 	{
 		((char *)dest)[i] = ((const char *)src)[i];

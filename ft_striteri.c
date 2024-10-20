@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juamolin <juamolin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: juamolin <juamolin@student.42madrid.com>   #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/09 20:11:44 by juamolin          #+#    #+#             */
-/*   Updated: 2024/10/13 12:42:01 by juamolin         ###   ########.fr       */
+/*   Created: 2024-10-17 18:24:14 by juamolin          #+#    #+#             */
+/*   Updated: 2024-10-17 18:24:14 by juamolin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
