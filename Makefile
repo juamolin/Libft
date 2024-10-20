@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: juamolin <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/10/20 18:50:03 by juamolin          #+#    #+#              #
+#    Updated: 2024/10/20 19:30:25 by juamolin         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 
 CC = cc
@@ -18,8 +30,14 @@ OBJS = $(SOURCE:.c=.o)
 
 INCLUDE = libft.h
 
-all: $(OBJS)
+all: $(OBJS) 
 	ar rcs $(NAME) $(OBJS)
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	ar -rcs $(NAME) $(BONUSOBJ) $(OBJ)
+	ranlib $(NAME)
 
 %.o : %.c $(INCLUDE)
 	@$(CC) $(CCFLAGS) -c $< -o $@
