@@ -23,8 +23,8 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-/*int	main(void)
+/*
+int	main(void)
 {
 	char	a[] = "Hola, que tal?";
 	size_t	str;
