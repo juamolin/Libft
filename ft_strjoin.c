@@ -20,6 +20,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
+	if (!s1 || !s2)
+		return (NULL);
 	result = (char *) malloc
 		((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (!result)
@@ -35,7 +37,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 /* int	main(void)
 {
-	char	*str1 = "Hola, ";
+	char	*str1 = NULL;
 	char	*str2 = "que tal?";
 	char	*resultado;
 

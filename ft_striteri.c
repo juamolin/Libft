@@ -24,11 +24,11 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
-void	my_toupper_inplace(unsigned int i, char *c)
+/* void	my_toupper_inplace(unsigned int i, char *c)
 {
 	(void)i;
 	*c = ft_toupper(*c);
-}
+} */
 
 /* int	main(void)
 {
