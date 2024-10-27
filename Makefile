@@ -6,7 +6,7 @@
 #    By: juamolin <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/20 18:50:03 by juamolin          #+#    #+#              #
-#    Updated: 2024/10/20 19:30:25 by juamolin         ###   ########.fr        #
+#    Updated: 2024/10/27 19:45:06 by juamolin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,23 +30,20 @@ OBJS = $(SOURCE:.c=.o)
 
 INCLUDE = libft.h
 
-all: $(OBJS) 
-	ar rcs $(NAME) $(OBJS)
-
-all: $(NAME)
+all: $(NAME) 
 
 $(NAME): $(OBJS)
-	ar -rcs $(NAME) $(BONUSOBJ) $(OBJ)
-	ranlib $(NAME)
+	ar -rcs $(NAME) $(OBJS)
+	ranlib $(NAME) 
 
 %.o : %.c $(INCLUDE)
-	@$(CC) $(CCFLAGS) -c $< -o $@
+	$(CC) $(CCFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
+	$(RM) -f $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) -f $(NAME)
 
 re: fclean all
 
